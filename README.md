@@ -54,7 +54,7 @@ The first thing to be done is to install **Maven** as a build too for **Jenkins*
 
 ### Create First Job
 1. On the left hand side of the **Dasboard**, click on **New Item**.
-2. Enter Project or Job Name, for instance, **webapp-project** and click **OK**.<p>
+2. Enter Project or Job Name, for instance, **webapp-project**, select **Freestyle Project** and click **OK**.<p>
 
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/d45261d8-cf82-4b8b-a632-966e293a8cdc)<p>
 
@@ -64,7 +64,7 @@ The first thing to be done is to install **Maven** as a build too for **Jenkins*
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/5ec7adf9-ef30-435f-b3bd-f0532c56532e)<p>
 
 5. Next, Select **Git** for the **Source Code Management**.
-6. Enter the **Repository URL** from **Github**.
+6. Enter the **Repository URL** from **Github**. **NB**: Since our project repo is public, we do not need need to add any credentials. This is not case for a private project. 
 7. At the **Branch to Build?** section, enter the repo branch, in our case, **main**.
 8. **Apply** and **Save** changes.<p>
 
