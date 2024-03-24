@@ -124,6 +124,10 @@ Let us run another **Maven Goal**, **test** with **Jenkins**.<p>
 5. Under the **Goals**, enter **test**. Next, click **Apply** and **Save**. <p>
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/1aad463c-f54d-4be6-9f57-e02abfb92d7d) <p>
 From our console output, the job has been ran successfully. <p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/7fe8f461-74fb-4024-94f2-6d171e4ec0f8) <p>
+
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/02c0eb21-463b-479d-8d3d-0fef1de41a67)
+
 
 
 
