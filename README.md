@@ -114,6 +114,8 @@ ls
 ```
 From the above, it is evident that the **target** folder has been added. <p>
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/dc3e9cfd-cdc0-4190-98b0-af036dc3b704) <p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/5cba14cc-f221-4d64-9685-2ceea97ecce8)
+
 
 
 
