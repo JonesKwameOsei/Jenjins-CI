@@ -19,8 +19,13 @@ We will log in into jenkins now by entring values into the appropraite fields. <
 Nex, click on **Save and Continue**.<p>
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/73af3be9-3e5b-42f6-8aa4-ddb34b2919d7)<p>
 
-On the **Instance Configuration** page, ensure your **URL** has been populated and click on **Save and Continue**.<p>
+On the **Instance Configuration** page, ensure your **URL** has been populated and click on **Save and Continue**.
+**NB**: I have mine hidden, hence, not visible but should be in the format: **http://yourinstanceIPAdress:8080<p>
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/cc902f8a-5892-48eb-a3ca-9fe0f9d33a25)
+
+We are now all set and ready to use jenkins.<P>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/bea5aaad-b3e4-4bfb-8b61-76f301a91339)
+
 
 
 
