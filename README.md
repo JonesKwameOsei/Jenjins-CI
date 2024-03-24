@@ -83,17 +83,26 @@ ls
 ```
 and then listing all the items in the folder to see if the files in the main repo have been cloned, indeed. <p>
 
-![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/70256625-1706-41b6-ac41-205eb5579205)<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/70256625-1706-41b6-ac41-205eb5579205) <p>
 5. Now, we will **Invkoe top-level Maven targets** in the **Jenkins configuration** to automate **Maven Commands**.
 6. Click the drop down on the **Maven Verion** to select the version we downloaded earlier.
 7. In the **Maven Goals**, enter **Clean** and **Package**.
-8. Select **Apply** and **Save**.
-![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/cde40cc7-ea49-4575-b6ff-7f14759f4e9f)
+8. Select **Apply** and **Save**.<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/cde40cc7-ea49-4575-b6ff-7f14759f4e9f) <p>
 
-9. Click on **Build Now** on the project page.
-![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/b4e12de6-c33c-46c3-a0c5-39ab8fef4c37)
+9. Click on **Build Now** on the project page.<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/b4e12de6-c33c-46c3-a0c5-39ab8fef4c37) <p>
 
-![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/ef1b3d28-1b94-4015-a0e8-5e42630ef3ce)
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/ef1b3d28-1b94-4015-a0e8-5e42630ef3ce) <p>
+
+Let us revisit the files directory to verify if the target folder has been added by Jenkins by re-running:
+```
+ls
+--
+From the above, it is evident that the **target** folder has been added. <p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/dc3e9cfd-cdc0-4190-98b0-af036dc3b704) <p>
+
+
 
 
 
