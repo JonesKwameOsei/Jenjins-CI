@@ -65,9 +65,15 @@ The first thing to be done is to install **Maven** as a build too for **Jenkins*
 
 ## Clone the Project Repo
 1. Navigate back to the **Project Page** on the **Dashboard**.
-2. Click on **Build Now** on the left side of the **Dashboard**.
+2. Click on **Build Now** on the left side of the **Dashboard**.<p>
 We will see this after the cloning the repo: <p>
-![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/4f5a6a8e-1985-409e-b513-11c3b95a867d)
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/4f5a6a8e-1985-409e-b513-11c3b95a867d)<p>
+
+### Confirm the Cloning of the Repo
+1. At the **Build Section** on the bottom left side of the Dashboard, click the drop down of the successful build.
+2. Select **Console Output**.<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/fb93c52e-9b35-40bb-bc3d-2e9bc1b0477b)
+
 
 
  
