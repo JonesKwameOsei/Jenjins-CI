@@ -49,6 +49,16 @@ The first thing to be done is to install **Maven** as a build too for **Jenkins*
 
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/d4cf5e3b-088c-431d-93cf-e0691f29d07f)
 
+### Create First Job
+1. On the left hand side of the **Dasboard**, click on **New Item**.
+2. Enter Project or Job Name, for instance, **webapp-project** and click **OK**.<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/d45261d8-cf82-4b8b-a632-966e293a8cdc)<p>
+
+3. Next, Click on **Configure**.
+4. On the **confiruration** page, **Add Description** for the project (optional).<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/5ec7adf9-ef30-435f-b3bd-f0532c56532e)
+
+ 
 
 
 
