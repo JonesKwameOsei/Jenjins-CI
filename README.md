@@ -47,6 +47,7 @@ The first thing to be done is to install **Maven** as a build too for **Jenkins*
 6. Click **Apply** and **Save**. <p>
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/d5251143-b62f-4aa7-a938-b18a60807048)
 
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/5a17df69-e6e3-4f6d-80b7-911a00234345)
 
 
 
