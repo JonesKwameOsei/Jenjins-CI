@@ -114,7 +114,17 @@ ls
 ```
 From the above, it is evident that the **target** folder has been added. <p>
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/dc3e9cfd-cdc0-4190-98b0-af036dc3b704) <p>
-![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/5cba14cc-f221-4d64-9685-2ceea97ecce8)
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/5cba14cc-f221-4d64-9685-2ceea97ecce8) <p>
+
+Let us run another **Maven Goal**, **test** with **Jenkins**.<p>
+1. Click on the job (project)
+2. Click on **Configure** on the project page.
+3. On the **Configure Page**, scroll down to **Build Steps** section.
+4. Click the drop down and select the maven version we downloaded, **Maven3.9.6** in the **Maven Version** field under the subsection, **Invoke top-level Maven targets**.
+5. Under the ***Goals**, enter **test**. Next, click **Apply** and **Save**. <p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/1aad463c-f54d-4be6-9f57-e02abfb92d7d)
+
+
 
 
 
