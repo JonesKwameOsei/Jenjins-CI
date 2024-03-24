@@ -1,4 +1,4 @@
-# Jenjins-CI
+# Jenkins-CI
 Automating Continuous Integration &amp; Continuous Deployment with Jenkins 
 
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/90693f6d-b199-4354-bd66-a270720bba49)
