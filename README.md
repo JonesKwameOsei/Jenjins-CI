@@ -91,7 +91,9 @@ and then listing all the items in the folder to see if the files in the main rep
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/cde40cc7-ea49-4575-b6ff-7f14759f4e9f)
 
 9. Click on **Build Now** on the project page.
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/b4e12de6-c33c-46c3-a0c5-39ab8fef4c37)
 
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/ef1b3d28-1b94-4015-a0e8-5e42630ef3ce)
 
 
 
