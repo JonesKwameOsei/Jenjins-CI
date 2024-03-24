@@ -121,8 +121,11 @@ Let us run another **Maven Goal**, **test** with **Jenkins**.<p>
 2. Click on **Configure** on the project page.
 3. On the **Configure Page**, scroll down to **Build Steps** section.
 4. Click the drop down and select the maven version we downloaded, **Maven3.9.6** in the **Maven Version** field under the subsection, **Invoke top-level Maven targets**.
-5. Under the ***Goals**, enter **test**. Next, click **Apply** and **Save**. <p>
-![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/1aad463c-f54d-4be6-9f57-e02abfb92d7d)
+5. Under the **Goals**, enter **test**. Next, click **Apply** and **Save**. <p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/1aad463c-f54d-4be6-9f57-e02abfb92d7d) <p>
+From our console output, the job has been ran successfully. <p>
+
+
 
 
 
