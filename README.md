@@ -72,7 +72,26 @@ We will see this after the cloning the repo: <p>
 ### Confirm the Cloning of the Repo
 1. At the **Build Section** on the bottom left side of the Dashboard, click the drop down of the successful build.
 2. Select **Console Output**.<p>
-![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/fb93c52e-9b35-40bb-bc3d-2e9bc1b0477b)
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/fb93c52e-9b35-40bb-bc3d-2e9bc1b0477b)<p>
+3. Jenkins built the repo successfully into the workspace **/var/lib/jenkins/workspace/webapp-project** as evident below.<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/d598fb54-28d6-47ba-8641-03d7ad099725)<p>
+4. We will further confirm from the **Jenkins CLI** by running:
+```
+cd /var/lib/jenkins/workspace/webapp-project
+
+ls
+```
+and then listing all the items in the folder to see if the files in the main repo have been cloned, indeed. <p>
+
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/70256625-1706-41b6-ac41-205eb5579205)<p>
+5. Now, we will **Invkoe top-level Maven targets** in the **Jenkins configuration** to automate **Maven Commands**.
+6. Click the drop down on the **Maven Verion** to select the version we downloaded earlier.
+7. In the **Maven Goals**, enter **Clean** and **Package**.
+8. Select **Apply** and **Save**.
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/cde40cc7-ea49-4575-b6ff-7f14759f4e9f)
+
+9. Click on **Build Now** on the project page.
+
 
 
 
