@@ -56,7 +56,19 @@ The first thing to be done is to install **Maven** as a build too for **Jenkins*
 
 3. Next, Click on **Configure**.
 4. On the **confiruration** page, **Add Description** for the project (optional).<p>
-![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/5ec7adf9-ef30-435f-b3bd-f0532c56532e)
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/5ec7adf9-ef30-435f-b3bd-f0532c56532e)<p>
+5. Next, Select **Git** for the **Source Code Management**.
+6. Enter the **Repository URL** from **Github**.
+7. At the **Branch to Build?** section, enter the repo branch, in our case, **main**.
+8. **Apply** and **Save** changes.<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/a821ae7a-af34-4624-a6b4-046e658ba38c)<p>
+
+## Clone the Project Repo
+1. Navigate back to the **Project Page** on the **Dashboard**.
+2. Click on **Build Now** on the left side of the **Dashboard**.
+We will see this after the cloning the repo: <p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/4f5a6a8e-1985-409e-b513-11c3b95a867d)
+
 
  
 
