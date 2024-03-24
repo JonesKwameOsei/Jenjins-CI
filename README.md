@@ -20,11 +20,38 @@ Nex, click on **Save and Continue**.<p>
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/73af3be9-3e5b-42f6-8aa4-ddb34b2919d7)<p>
 
 On the **Instance Configuration** page, ensure your **URL** has been populated and click on **Save and Continue**.
-**NB**: I have mine hidden, hence, not visible but should be in the format: **http://yourinstanceIPAdress:8080<p>
+**NB**: I have mine hidden, hence, not visible but should be in the format: **http://yourinstanceIPAdress:8080**.<p>
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/cc902f8a-5892-48eb-a3ca-9fe0f9d33a25)
 
-We are now all set and ready to use jenkins.<P>
+We are now all set and ready to use jenkins. Click on **Start usiung Jenkins**.<P>
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/bea5aaad-b3e4-4bfb-8b61-76f301a91339)
+
+We have successfully **setup and logged into Jenkins**. <p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/d82c50e0-087d-4a16-9ae4-3e9b377d6637)
+
+## Downnload Plugins 
+The first thing to be done is to install **Maven** as a build too for **Jenkins**.
+1. On the the left side of the **Dashboard**, click on **Manage Jenkins**. You should see this page.<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/ae8856d6-8dfe-423d-a0f6-d6124d86e86a)<p>
+
+2. Under **System Configuration**, click on **tools**.<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/0ac4e723-1e54-4c90-874a-c83dca1b4ac8)<p>
+
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/d89741e3-10fe-4ce3-9e05-f404e19c8a9f)<p>
+
+3. On the **Maven Configuration** page, leave default configurations as seen.<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/3026d8cd-ee24-4295-a8db-4f531a0b99d6)
+
+4. Scroll down to **Maven Installation** and click on **add maven**.
+5. Enter the name **Maven3.9.6*** (named according to the the current version of maven).
+6. Click **Apply** and **Save**. <p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/d5251143-b62f-4aa7-a938-b18a60807048)
+
+
+
+
+
+
 
 
 
