@@ -173,17 +173,14 @@ Our build job is successful confirming from the **console output**. <p>
 Let's peruse the **analysis report** to delve deeper into the output. This report is populated by **Sonarqube** as observed below.<p>
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/c117e56f-c046-43c4-a691-fa41c74c89f7) <p>
 From the report:<p>
-| Issues | Count |
-| ----------- | ----------- |
-| Bugs | 1 |
-| Vulnerabilities | 0 |
-| Security Hotspots | 1|
-| Code Smells | 5 |
-| Duplication | 0 |
 
 | Issues | Count |
 | ----------- | ----------- |
 | Bugs | 1 |
+| Vulnerabilities | 0 |
+| Security Hotspots | 1 |
+| Code Smells | 5 |
+| Duplication | 0 |
 
 
 
