@@ -186,6 +186,19 @@ From the report the following issues are revealed:<p>
 We can see the same report from the main **Sonarqube** page by navigating to the project tub.<p>
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/73606f80-38e1-4081-87f7-f8bb29b6dced)
 
+## Install The Build Artifact into Nexus with Jenkins
+Nexus has already be configured on an ** Amazon EC2 instance** running on **port:8081**.<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/f0ac1488-1933-4eb2-9f0b-7bc2f1e90cb6)<p>
+
+The following steps outlines how to provision get **Nexus** ready for the installation:<p>
+1. On the **Nexus Welcome Page**, click on the **Server Administration and Configuration Icon (settings icon)**.<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/1a1fdd0e-8e9a-4ab2-be1e-17a498735c70)<p>
+
+2. Next, click on **Repositories**.<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/018d39d0-b5ab-4c30-9c33-c6b46aa8a898)
+
+
+
 
 
 
