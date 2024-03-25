@@ -199,7 +199,7 @@ The following steps outlines how to set up and get **Nexus** ready for the insta
 4. Next, on the **Repositories/Select Recipe** page, select **maven2(hosted)**.<p>
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/3835d5ab-03c1-48c9-8bbd-c040008e65fe)<p>
 5. Enter Name: **wepapp-release** into the **Name field** on the **Create Repository:maven2 (hosted)** page.
-6. At the **Version Policy section, click the drop down and select **Release**.
+6. At the **Version Policy section**, click the drop down and select **Release**.
 7.  Leave all fields at **Default** except the **Hosted - Deployment policy** section.
 8.  At the **Deployment policy** section, click on the drop down and select **Allow redeploy**.
 9.  Click on **Create repository**. <p>
@@ -250,6 +250,32 @@ The console output indicates that the build is successful.<p>
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/5317e06e-4340-4c4b-9cdc-12b96e66c838)<P>
 We can now verify if it was this time deplyoyed to the **release** or not on the the **Nexus Dashboard**.<p>
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/f7553baf-0c7d-4b4d-bfc9-837c5e9e6bc3)<p>
+
+The image above shows that the artifact was built to the **release version**
+
+### Deploy Artifact to TomCat with Jenkins
+I have already provisioned and configured **Tomcat9** on ** an Amazon EC2 Instance** running on **port:8080**. However, we will need to install some **plugins** in **Jenkins** to achieve our goal. 
+1. Navigate back to **Jenkins main dashboard**
+2. Click on **Manage Jenkins**. <p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/decd6dab-b9fd-4207-b924-f39a6ab9b139)<p>
+3. Click on **Plugins**, search for **Deploy ro container** and click on **install** on the top right corner.
+4. After a successful installation, navigate to the **webapp-project** and click on **configure**.
+5. On the configure page, select **Post-build Actions**.
+6. Click **Add post-build action** drop down and select **Deploy war/ear to a container**.
+7. Enter the values to the appropriate fields and click **Apply**  and **Save**.<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/9b0350ec-556d-4424-aa35-37942caee256)<p>
+8. Deploy to tomcat by clicking on **Build Now** on the project job page. Before er build, we should note that on the **tomcat** server, we do not have the artifactnow.<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/5d16fc6e-ac8a-4838-a365-08859841c8f3)<p>
+The build job is successful as confirmed from the **console output**.<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/cad955ca-602c-41cb-b327-9c9c38379fb1)<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/c531c0ee-563e-48ce-ba78-3dced27277ef)<p>
+Our artifact has been uploaded to **Nexus** and **deployed** to **tomcat**. Let's refresh the **tomcat** page to confirm the deployment of the artifact. <p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/07ee57a1-b082-44a0-831d-cecd09bc63da)<p>
+It is evident that **Jenkins** has successfully deployed the artifact, **web-app** to **tomcat server**. By clicking on the **web-app** on the **tomcat server**, we have successfully utilised **Jenkins** to perform a **continuous integration** and continuous delivery** to deploy a web application on the **tomcat server**.
+
+
+
+
 
 
 
