@@ -126,8 +126,19 @@ Let us run another **Maven Goal**, **test** with **Jenkins**.<p>
 From our console output, the job has been ran successfully. <p>
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/7fe8f461-74fb-4024-94f2-6d171e4ec0f8) <p>
 
-![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/02c0eb21-463b-479d-8d3d-0fef1de41a67)
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/02c0eb21-463b-479d-8d3d-0fef1de41a67) 
 
+### Sonarqube in Jenkins
+1. Click on the job (project)
+2. Click on **Configure** on the project page.
+3. On the **Configure Page**, click on the **Build Steps** section.
+4. Click the drop down and select the maven version we downloaded, **Maven3.9.6** in the **Maven Version** field under the subsection, **Invoke top-level Maven targets**.
+5. Under the **Goals**, enter **package**.
+6. Next, **Add build step**
+7. Click the drop down and select the maven version we downloaded, **Maven3.9.6** in the **Maven Version** field under the subsection, **Invoke top-level Maven targets**.
+8. Under the **Goals**, enter **soar:sonar**.
+9. click **Apply** and **Save**. <p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/9f622ab5-dc1c-45ca-a253-42cd5e6fcfb3)
 
 
 
