@@ -170,9 +170,10 @@ Initially, the job failed with the feedback below. <p>
 Our build job is successful confirming from the **console output**. <p>
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/06360326-5659-4dfe-9195-494393e16a48) <p>
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/62e83b46-941b-4837-beea-1bc7db9c9214)<p>
-Let's peruse the **analysis report** to delve deeper into the output. This report is populated by **Sonarqube** as observed below.<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/28065002-a732-429d-931f-4de05bc483c7)<p>
+Let's peruse the **analysis report** to delve deeper into the output. This report is populated by **Sonarqube** as observed below from the url above.<p>
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/c117e56f-c046-43c4-a691-fa41c74c89f7) <p>
-From the report:<p>
+From the report the following issues are revealed:<p>
 
 | Issues | Count |
 | ----------- | ----------- |
@@ -181,6 +182,9 @@ From the report:<p>
 | Security Hotspots | 1 |
 | Code Smells | 5 |
 | Duplication | 0 |
+
+We can see the same report from the main **Sonarqube** page by navigating to the project tub.<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/73606f80-38e1-4081-87f7-f8bb29b6dced)
 
 
 
