@@ -181,6 +181,11 @@ From the report:<p>
 | Code Smells | 5 |
 | Duplication | 0 |
 
+| Syntax | Description |
+| ----------- | ----------- |
+| Header | Title |
+| Bugs | 1 |
+
 
 
 
