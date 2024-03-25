@@ -194,10 +194,76 @@ The following steps outlines how to set up and get **Nexus** ready for the insta
 1. On the **Nexus Welcome Page**, click on the **Server Administration and Configuration Icon (settings icon)**.
 2. Next, click on **Repositories**.<p>
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/1a1fdd0e-8e9a-4ab2-be1e-17a498735c70)<p>
-
+3. Click **Create Repository** on the **Repositories - Manage repositories** page.<p>
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/018d39d0-b5ab-4c30-9c33-c6b46aa8a898)<p>
+4. Next, on the **Repositories/Select Recipe** page, select **maven2(hosted)**.<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/3835d5ab-03c1-48c9-8bbd-c040008e65fe)<p>
+5. Enter Name: **wepapp-release** into the **Name field** on the **Create Repository:maven2 (hosted)** page.
+6. At the **Version Policy section, click the drop down and select **Release**.
+7.  Leave all fields at **Default** except the **Hosted - Deployment policy** section.
+8.  At the **Deployment policy** section, click on the drop down and select **Allow redeploy**.
+9.  Click on **Create repository**. <p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/12ea291a-51be-411d-8236-57fda40f9893)<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/13859cf3-940c-40f6-a8ed-6d6ccaf8fc4b)<p>
+10. Repeat **steps 1 to 9** to create **a snapshot** of the project. **NB**: The name at **step 5** will be **webapp-snapshot** insead.
+11. Click **Browse Server Contents**, then click on **Browse** on the left side of the **Nexus Welcome Page to see the **webapp-release and webapp-snapshot repos** created.<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/d3b1a4ca-f848-426d-bb82-37ef5a7c5236)<p>
+12. Next, we will update the login details of **Nexus admin** configuration in the **pom.xml** file. Then, push the changes to the github repo.<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/d57f99e6-66ce-4e57-8d2e-7db33a117318)
 
-3. Click **Create Repository** on the **Repositories - Manage repositories** page.
+### Run the Build Artefact in Jenkins to Nexus
+Here, we will run another job in **Jenkins** to build the artefact into **Nexus**.
+1. Click on **Configure** on the **Jenkins project page**.
+2. On the configure page, click **Build Step**.
+3. Repeat the **Invoke top-level Maven targets** configuration but this time, the **Maven Goal** will be **deploy**.
+4. Click **Apply** and **save**<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/7da25076-82dd-4cbf-8ebd-35472d820ea2)<p>
+5. Return to the project page and click **Build Now**.
+**NB**: In order not for our deploy job to fail, we need to configure **Nexus** login details in Jenkins with the **command line interface** by running:
+```
+cd /var/lib/jenkins/tools/hudson.tasks.Maven_MavenInstallation/Maven3.9.6/conf
+sudo vim settings.xml
+```
+In the **vim editor**, we will add the nexus login details to the **settings.xml** file.
+```
+  <server>
+      <id>deploymentRepo</id>           # change deploymentRepo to nexus
+      <username>repouser</username>     # change repouser to admin
+      <password>repopwd</password>      # change repopwd to your nexus password
+  </server>
+```
+Having done the above, will proceed to run the **Build job**. The build job is succesfull.<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/8ec8d2ff-7739-438e-a5c2-f673901c1e87)<p>
+
+The build artefact has been successfully loaded to **Nexus**.<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/7061e627-2c5d-4146-8626-e785e6f0da78)<p>
+This can be confirmed from the **Nexus Dashboard.<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/79eef058-de98-4425-ab34-4807c82a246e)<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/90085ce0-cf08-45ea-b937-77a804bb0dab)<p>
+From the above, it can be seen that the build is created in the **webapp-snapshot** repository but not the **webapp-release** repository. This is the case becuase in the pom.xml configuration, the build was set to the **snapshot version**. 
+6. We will update the version and push the changes to the **Github repo**.
+```
+<version>3.1.2-RELEASE</version>
+```
+7. We will run the **Jenkins job** again. <p>
+The console output indicates that the build is successful.<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/5317e06e-4340-4c4b-9cdc-12b96e66c838)<P>
+We can now verify if it was this time deplyoyed to the **release** or not on the the **Nexus Dashboard**.<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/f7553baf-0c7d-4b4d-bfc9-837c5e9e6bc3)<p>
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
 
 
 
