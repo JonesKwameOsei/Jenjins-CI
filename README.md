@@ -140,6 +140,8 @@ git push                 # push the changes to the repo
 
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/5998f12e-2990-462f-a789-d019c525983f)<p>
 
+It can be observed that, the **pom.xml** file has been duly updated in the github repo **a minute ago**. <p>
+
 
 1. Click on the job (project)
 2. Click on **Configure** on the project page.
@@ -151,6 +153,34 @@ git push                 # push the changes to the repo
 8. Under the **Goals**, enter **soar:sonar**.
 9. click **Apply** and **Save**. <p>
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/9f622ab5-dc1c-45ca-a253-42cd5e6fcfb3)<p>
+
+10. On the **Project page**, click **Build Now** to run our 4th build job:<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/48fdacee-2521-4f83-be32-d08ea772c2ba)
+
+Initially, the job failed with the feedback below. <p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/aa1ab4fc-f4ec-4233-8062-94c4c1e71a51)
+
+11. **Troubleshooting the error**: This stems from entering the wrong password in the **Sonarqube** login configuration in the **pom.xml file**. To solve this, we will input the correct value of the password in the aforementioned file configuration. The error from **Jenkins** is stated below:
+*"Failed to execute goal org.sonarsource.scanner.maven:sonar-maven-plugin:3.11.0.3922:sonar (default-cli) on project maven-web-application: Not authorized. Please check the properties sonar.login and sonar.password."*
+
+12. The **passwrod** in the configuration has been updated and the changes has been pushed to the github repo.<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/eaea37d1-764a-4c5e-a5ff-85d968b19225)<p>
+
+13. Let's re-run the build process by clicking on the **Build Now** on the project page. <p>
+Our build job is successful confirming from the **console output**. <p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/06360326-5659-4dfe-9195-494393e16a48) <p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/62e83b46-941b-4837-beea-1bc7db9c9214)<p>
+Let's peruse the **analysis report** to delve deeper into the output. This report is populated by **Sonarqube** as observed below.<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/c117e56f-c046-43c4-a691-fa41c74c89f7) <p>
+From the report:
+	| Syntax | Description |
+| ----------- | ----------- |
+| Bugs | Title |
+| Paragraph | Text |
+
+
+
+
 
 
 
