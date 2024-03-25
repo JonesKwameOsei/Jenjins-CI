@@ -138,7 +138,7 @@ From our console output, the job has been ran successfully. <p>
 7. Click the drop down and select the maven version we downloaded, **Maven3.9.6** in the **Maven Version** field under the subsection, **Invoke top-level Maven targets**.
 8. Under the **Goals**, enter **soar:sonar**.
 9. click **Apply** and **Save**. <p>
-![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/9f622ab5-dc1c-45ca-a253-42cd5e6fcfb3)
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/9f622ab5-dc1c-45ca-a253-42cd5e6fcfb3)<p>
 
 
 
