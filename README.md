@@ -129,6 +129,18 @@ From our console output, the job has been ran successfully. <p>
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/02c0eb21-463b-479d-8d3d-0fef1de41a67) 
 
 ### Sonarqube in Jenkins
+Update the pom.xml file to conatain the login details of the Sonarqube. Then subsequently update the file in the repo by running these **git commands**:
+```
+git status               # checks the pending changes
+git add pom.xml          # adds the file to the staging area
+git commit -m "updated sonar url"
+git push                 # push the changes to the repo
+```
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/8f174082-0b45-4392-a674-9340facd0e6f)<p>
+
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/5998f12e-2990-462f-a789-d019c525983f)<p>
+
+
 1. Click on the job (project)
 2. Click on **Configure** on the project page.
 3. On the **Configure Page**, click on the **Build Steps** section.
@@ -139,6 +151,9 @@ From our console output, the job has been ran successfully. <p>
 8. Under the **Goals**, enter **soar:sonar**.
 9. click **Apply** and **Save**. <p>
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/9f622ab5-dc1c-45ca-a253-42cd5e6fcfb3)<p>
+
+
+
 
 
 
