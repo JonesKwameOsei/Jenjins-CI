@@ -271,7 +271,9 @@ The build job is successful as confirmed from the **console output**.<p>
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/c531c0ee-563e-48ce-ba78-3dced27277ef)<p>
 Our artifact has been uploaded to **Nexus** and **deployed** to **tomcat**. Let's refresh the **tomcat** page to confirm the deployment of the artifact. <p>
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/07ee57a1-b082-44a0-831d-cecd09bc63da)<p>
-It is evident that **Jenkins** has successfully deployed the artifact, **web-app** to **tomcat server**. By clicking on the **web-app** on the **tomcat server**, we have successfully utilised **Jenkins** to perform a **continuous integration** and continuous delivery** to deploy a web application on the **tomcat server**.
+It is evident that **Jenkins** has successfully deployed the artifact, **web-app** to **tomcat server**. By clicking on the **web-app** on the **tomcat server**, we have successfully utilised **Jenkins** to perform a **continuous integration** and continuous delivery** to deploy a web application on the **tomcat server**.<p>
+![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/17adb4f0-afa5-4972-a648-ff5c2ad0ff66)
+
 
 
 
