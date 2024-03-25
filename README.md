@@ -172,7 +172,7 @@ Our build job is successful confirming from the **console output**. <p>
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/62e83b46-941b-4837-beea-1bc7db9c9214)<p>
 Let's peruse the **analysis report** to delve deeper into the output. This report is populated by **Sonarqube** as observed below.<p>
 ![image](https://github.com/JonesKwameOsei/Jenjins-CI/assets/81886509/c117e56f-c046-43c4-a691-fa41c74c89f7) <p>
-From the report:
+From the report:<p>
 	| Syntax | Description |
 | ----------- | ----------- |
 | Bugs | Title |
