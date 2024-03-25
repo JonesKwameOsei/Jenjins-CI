@@ -181,9 +181,8 @@ From the report:<p>
 | Code Smells | 5 |
 | Duplication | 0 |
 
-| Syntax | Description |
+| Issues | Count |
 | ----------- | ----------- |
-| Header | Title |
 | Bugs | 1 |
 
 
